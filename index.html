@@ -4,62 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Instagram</title>
 </head>
-<body>
-    <main class="instagram-wrapper">
-        <section class="instagram-phone">
-            <img 
-                src="./assets/instagram-celular.png" 
-                alt="Imagem do celular com Instagram"
-            >
-        </section>
+<body id="body">
 
-        <section class="instagram-continue">
-            <div class="group">
+  
+    <main class="container">
+
+         <div class="toggle-day-night">
+            <a class="toggle-on" onclick="DayNight.toggleDayNight(this)">
+                <i class="material-icons">toggle_on</i>
+            </a>
+
+            <a class="toggle-off" onclick="DayNight.toggleDayNight(this)">
+                <i class="material-icons">toggle_off</i>
+           </a>
+        </div>
+
+        <div class="instagram-wrapper">
+            <section class="instagram-phone">
                 <img 
-                    src="./assets/instagram-logo.png" 
-                    class="instagram-logo" 
-                    alt="Logo do Instagram"
+                    src="./assets/instagram-celular.png" 
+                    alt="Imagem do celular com Instagram"
                 >
-                
-                <div class="profile-photo">
+            </section>
+
+            <section class="instagram-continue">
+                <div class="group">
                     <img 
-                        src="./assets/perfil-instagram.jpeg" 
-                        alt="Foto do perfil"
+                        src="./assets/inst_dark2.svg" 
+                        class="instagram-logo logo-black" 
+                        alt="Logo do Instagram"
                     >
+
+                    <img 
+                    src="./assets/inst_white.svg" 
+                    class="instagram-logo logo-white" 
+                    alt="Logo do Instagram"
+                    >
+                    
+                    <div class="profile-photo">
+                        <img 
+                            src="./assets/perfil-instagram.jpeg" 
+                            alt="Foto do perfil"
+                        >
+                    </div>
+
+                    <a href="https://www.instagram.com/lucazura/" 
+                        class="instagram-login" 
+                        target="_blank"
+                        >Continuar como lucazura
+                    </a>
+                    <p>Não é lucazura?<a 
+                        href="#" 
+                        class="instagram-logout"
+                        >Trocar de conta
+                        </a>
+                    </p>
+                </div>
+                <div class="group">
+                    <p><a href="#" class="instagram-logout">Trocar de conta</a> ou <a href="#" class="instagram-logout" >Cadastra-se</a></p>
                 </div>
 
-                <a href="https://www.instagram.com/lucazura/" 
-                    class="instagram-login" 
-                    target="_blank"
-                    >Continuar como lucazura
-                </a>
-                <p>Não é lucazura?<a 
-                    href="#" 
-                    class="instagram-logout"
-                    > Trocar de conta
-                    </a>
-                </p>
-            </div>
 
+                <div class="get-this-app">
+                    <p class="get-app">Obtenha o aplicativo.</p>
+                    <div class="download">
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"
+                        class="app-download"
+                        >
+        
+                        </a>
+                        <a href="https://apps.apple.com/br/app/instagram/id389801252"
+                        class="app-download"
+                        >
 
-            <div class="get-this-app">
-                <p class="get-app">Baixe o aplicativo!</p>
-                <div class="download">
-                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"
-                       class="app-download"
-                    >
-       
-                    </a>
-                    <a href="https://apps.apple.com/br/app/instagram/id389801252"
-                    class="app-download"
-                    >
-
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </main>
+    <script src="./darkmode.js"></script>
 </body>
 </html>
